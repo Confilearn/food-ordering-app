@@ -1,5 +1,3 @@
-import CartButton from "@/components/CartButton";
-import { images, offers } from "@/constants";
 import cn from "clsx";
 import { Fragment } from "react";
 import {
@@ -11,6 +9,9 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import CartButton from "@/components/CartButton";
+import { images, offers } from "@/constants";
 
 export default function App() {
   return (
