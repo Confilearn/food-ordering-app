@@ -12,6 +12,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import CartButton from "@/components/CartButton";
 import { images, offers } from "@/constants";
+import { router } from "expo-router";
 
 export default function App() {
   return (
@@ -24,7 +25,9 @@ export default function App() {
           return (
             <View>
               <Pressable
-                // cn = used for dynamically inserting classname's
+                onPress={() => {
+                  router.push("/search");
+                }}
                 className={cn(
                   "offer-card",
                   isEven ? "flex-row-reverse" : "flex-row"
